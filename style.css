@@ -1,0 +1,163 @@
+/*
+Theme Name: MLWWPT
+Theme URI: http://dudehub.de/wp_/wp_mb
+Description: My Lightweight WordPress theme
+Author: Mark Breukelman
+Author URI: http://dudehub.de
+Version: 0.1337
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: mlwwpt
+Tags: right-sidebar, blog, custom-header
+
+*/
+
+body {
+	color: #333; 
+	background: #e5e5e5;
+	font-family:"Courier New", Courier, monospace;
+	}
+
+#entry {
+	margin-bottom: 45px;
+	margin-top: 0px;
+}
+#wrapper    {width: 850px; margin: auto; text-align: left; background: #fff;list-style: none;}
+#header     {height: 100px; padding: 20px; }
+#main       {width: 520px; padding: 20px; float: left;}
+#sidebar    {width: 270px; padding: 10px; padding-top: 20px; float: left;}
+#footer     {clear: both; height: 100px; padding: 20px; }
+
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Hover fuer a-Elemente*/
+a:hover {
+ background-color: #FF0000;
+ color: #FFFFFF;
+}
+
+/* nav container mit Hintergrund */
+nav {
+ margin: 0px 0;
+ background-color: #454545;
+}
+/* Aufheben der Ausrichtung mit clear: both */
+nav:after {
+ content:"";
+ display:table;
+ clear:both;
+}
+/* Removing padding, margin and "list-style" from the "ul",
+* and adding "position:reltive" */
+nav ul {
+ padding:0;
+ margin:0;
+ list-style: none;
+ position: relative;
+ }
+/* Navigationsitems positionieren, links ausrichten */
+nav ul li {
+ margin: 0px;
+ display:inline-block;
+ float: left;
+ background-color: #454545;
+ }
+/* Aussehen der Links festlegen */
+nav a {
+ display:block;
+ padding:0 10px;
+ color:#FFF;
+ font-size:20px;
+ line-height: 60px;
+ text-decoration:none;
+}
+/* Hintergrundfarbe der Links ändern, wenn die Maus drüberstreicht: Hover */
+nav a:hover {
+ background-color: #FF0000;
+}
+
+
+nav ul ul {
+ display: none;
+ position: absolute;
+ padding: 0;
+ top:60px;
+ z-index: 100;
+ /*padding: 60px 0;*/
+}
+/* Anzeigen bei Hover */
+nav ul li:hover > ul {
+ display:inherit;
+}
+ /* Erstes Dropdown-Menu */
+nav ul ul li {
+ min-width:170px;
+ float:none;
+ display:list-item;
+ position: relative;
+}
+
+/* zweites, drittes, ... Drop-Down-Menu */
+nav ul ul ul {
+ position: absolute;
+ top:-60px;
+ left: 170px;
+}
+
+/* markieren der Verzeichnisse mit Untermenu */
+li > a:after { content: ''; }
+li > a:only-child:after { content: ''; }
+
+p.post-date {
+	font-size: 12px;
+	margin: 0px;
+}
+
+p.post-header {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.wp-caption{
+	
+}
+
+.wp-caption-text{
+}
+
+.sticky {
+	
+}
+
+.screen-reader-text{
+	
+}
+
+.gallery-caption{
+	
+}
+
+.bypostauthor {
+	
+}
+
+.alignright{
+	
+}
+
+.alignleft{
+	
+}
+
+.aligncenter{
+	
+}
+
+.comment-body {
+	margin-bottom: 30px;
+}

@@ -1,6 +1,4 @@
-#MLWWPT
-
-My Lightweight WordPress theme Edit
+# My Lightweight WordPress theme Edit
 
 
 Theme Name: MLWWPT
